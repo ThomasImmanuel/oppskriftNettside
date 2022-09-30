@@ -26,8 +26,18 @@ body {
 .header {
     background-color: rgba(152, 157, 205, 1);
     width: 100%;
-    text-align: center;
     border: solid;
+    display: flex;
+    justify-content: center;
+}
+
+.hjem {
+    position: absolute;
+    left: 40px;
+    top: 20px;
+    font-size: 40px;
+    text-decoration: none;
+    color: black;
 }
 
 h1 {
@@ -139,6 +149,7 @@ h2 {
     transition: all .5s ease;
     height: 0;
     overflow: hidden;
+    padding-left: 30px;
 }
 
 
