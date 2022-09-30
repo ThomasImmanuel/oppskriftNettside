@@ -4,8 +4,10 @@ body {
     align-items: center;
     margin: 0;
     row-gap: 50px;
+   
 }
 
+/* conteineren til innholdet som flexes */
 #innhold {
     display: flex;
     flex-wrap: wrap;
@@ -15,13 +17,13 @@ body {
     row-gap: 50px;
 }
 
-
+/* sørg for at divene er riktig høyde og bredde */
 #kjott, #vegetar, #suppe, #sjomat, #bakst, #dessert{
     width: 281px;
     height: 233px;;
 }
 
-#header {
+.header {
     background-color: rgba(152, 157, 205, 1);
     width: 100%;
     text-align: center;
@@ -29,7 +31,7 @@ body {
 }
 
 h1 {
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 #kjottP {
@@ -38,7 +40,7 @@ h1 {
     left: 70px;
     color: white;
     font-size: 48px;
-    color: rgba(169, 18, 18, 1);
+    color: rgb(241, 30, 30);
     margin: 0;
     padding: 0;
     visibility: hidden;
@@ -50,7 +52,7 @@ h1 {
     left: 30px;
     color: white;
     font-size: 48px;
-    color: rgba(48, 169, 18, 1);
+    color: rgb(66, 229, 26);
     margin: 0;
     padding: 0;
     visibility: hidden;
@@ -62,7 +64,7 @@ h1 {
     left: 70px;
     color: white;
     font-size: 48px;
-    color: rgb(204, 170, 90);
+    color: rgb(241, 201, 107);
     margin: 0;
     padding: 0;
     visibility: hidden;
@@ -74,7 +76,7 @@ h1 {
     left: 55px;
     color: white;
     font-size: 48px;
-    color: rgb(48, 197, 224);
+    color: rgb(50, 209, 237);
     margin: 0;
     padding: 0;
     visibility: hidden;
@@ -86,7 +88,7 @@ h1 {
     left: 65px;
     color: white;
     font-size: 48px;
-    color: rgb(223, 223, 81);
+    color: rgb(235, 235, 84);
     margin: 0;
     padding: 0;
     visibility: hidden;
@@ -98,8 +100,48 @@ h1 {
     left: 40px;
     color: white;
     font-size: 48px;
-    color: rgb(193, 141, 44);
+    color: rgb(243, 176, 53);
     margin: 0;
     padding: 0;
     visibility: hidden;
+}
+
+/* styling for kjøttrettsiden */
+
+h2 {
+    margin: 0;
+}
+.dropDownClick {
+    background-color: rgb(255, 255, 255);
+    border-bottom: solid;
+    border-right: solid;
+    height: 40px;
+    display: flex;
+    width: 700px;
+    justify-content: center;
+    position: relative;
+}
+
+.dropDownClick img {
+    height: 20px;
+    bottom: 10px;
+    position: absolute;
+    left: 600px;
+}
+
+.dropDownOppskrift :hover {
+    cursor: pointer;
+}
+
+.oppskrift {
+    width: 700px;
+    /* visibility: hidden; */
+    transition: all .5s ease;
+    height: 0;
+    overflow: hidden;
+}
+
+
+ul {
+    margin: 0;
 }
