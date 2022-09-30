@@ -13,12 +13,12 @@ body {
     justify-content: center;
     justify-content: space-between;
     row-gap: 50px;
-    
 }
 
-img:hover {
-    filter: blur(8px);
-    transition: 0.7s;
+
+#kjott, #vegetar, #suppe, #sjomat, #bakst, #dessert{
+    width: 281px;
+    height: 233px;;
 }
 
 #header {
@@ -30,4 +30,76 @@ img:hover {
 
 h1 {
     color: white;
+}
+
+#kjottP {
+    position: relative;
+    top: -150px;
+    left: 70px;
+    color: white;
+    font-size: 48px;
+    color: rgba(169, 18, 18, 1);
+    margin: 0;
+    padding: 0;
+    visibility: hidden;
+}
+
+#vegetarP {
+    position: relative;
+    top: -150px;
+    left: 30px;
+    color: white;
+    font-size: 48px;
+    color: rgba(48, 169, 18, 1);
+    margin: 0;
+    padding: 0;
+    visibility: hidden;
+}
+
+#suppeP {
+    position: relative;
+    top: -150px;
+    left: 70px;
+    color: white;
+    font-size: 48px;
+    color: rgb(204, 170, 90);
+    margin: 0;
+    padding: 0;
+    visibility: hidden;
+}
+
+#sjomatP {
+    position: relative;
+    top: -150px;
+    left: 55px;
+    color: white;
+    font-size: 48px;
+    color: rgb(48, 197, 224);
+    margin: 0;
+    padding: 0;
+    visibility: hidden;
+}
+
+#bakstP {
+    position: relative;
+    top: -150px;
+    left: 65px;
+    color: white;
+    font-size: 48px;
+    color: rgb(223, 223, 81);
+    margin: 0;
+    padding: 0;
+    visibility: hidden;
+}
+
+#dessertP {
+    position: relative;
+    top: -150px;
+    left: 40px;
+    color: white;
+    font-size: 48px;
+    color: rgb(193, 141, 44);
+    margin: 0;
+    padding: 0;
+    visibility: hidden;
 }
