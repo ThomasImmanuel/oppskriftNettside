@@ -8,40 +8,46 @@ btn.onclick = () => {
         left: 0,
         behavior: 'smooth',
     });
-}
+};
+
+//funksjon lytter til musover og blurer bilde og viser p
+function textOverImage(p, img) {
+    p.setAttribute('style','visibility: visible;');
+    img.setAttribute('style','filter: brightness(50%); transition: 0.7s;');
+};
+
+//funksjon lytter til musut og fjerner blur på bildet og skjuler p
+function backToImage(p, img) {
+    p.setAttribute('style','visibility: hidden;');
+    img.setAttribute('style','filter: none; transition: 0.7s;');
+};
 
 //Henter inn kjøtt-div, -bilde og -p
 const kjott = document.querySelector('#kjott');
 const kjottP = document.querySelector('#kjottP');
 const kjottImg = document.querySelector('#kjottImg');
 
-//funksjon lytter til musover og blurer bilde og viser p
-kjott.onmouseover = () => {
-    kjottP.setAttribute('style','visibility: visible;');
-    kjottImg.setAttribute('style','filter: brightness(50%); transition: 0.7s;')
-}
-//funksjon lytter til musut og fjerner blur på bildet og skjuler p
-kjott.onmouseout = () => {
-    kjottP.setAttribute('style','visibility: hidden;');
-    kjottImg.setAttribute('style','filter: none; transition: 0.7s;')
-}
+kjott.onmouseover = function() {
+    textOverImage(kjottP, kjottImg);
+};
 
+kjott.onmouseout = function() {
+    backToImage(kjottP, kjottImg);
+};
 
 //Henter inn sjomat-div, -bilde og -p
 const sjomat = document.querySelector('#sjomat');
 const sjomatP = document.querySelector('#sjomatP');
 const sjomatImg = document.querySelector('#sjomatImg');
 
-//funksjon lytter til musover og blurer bilde og viser p
-sjomat.onmouseover = () => {
-    sjomatP.setAttribute('style','visibility: visible;');
-    sjomatImg.setAttribute('style','filter: brightness(50%); transition: 0.7s;')
-}
-//funksjon lytter til musut og fjerner blur på bildet og skjuler p
-sjomat.onmouseout = () => {
-    sjomatP.setAttribute('style','visibility: hidden;');
-    sjomatImg.setAttribute('style','filter: none; transition: 0.7s;')
-}
+sjomat.onmouseover = function() {
+    textOverImage(sjomatP,sjomatImg);
+};
+
+sjomat.onmouseout = function() {
+    backToImage(sjomatP,sjomatImg);
+};
+
 
 
 
@@ -50,15 +56,11 @@ const vegetar = document.querySelector('#vegetar');
 const vegetarP = document.querySelector('#vegetarP');
 const vegetarImg = document.querySelector('#vegetarImg');
 
-//funksjon lytter til musover og blurer bilde og viser p
-vegetar.onmouseover = () => {
-    vegetarP.setAttribute('style','visibility: visible;');
-    vegetarImg.setAttribute('style','filter: brightness(50%); transition: 0.7s;')
+vegetar.onmouseover = function() {
+    textOverImage(vegetarP,vegetarImg);
 }
-//funksjon lytter til musut og fjerner blur på bildet og skjuler p
-vegetar.onmouseout = () => {
-    vegetarP.setAttribute('style','visibility: hidden;');
-    vegetarImg.setAttribute('style','filter: none; transition: 0.7s;')
+vegetar.onmouseout = function() {
+    backToImage(vegetarP,vegetarImg);
 }
 
 
@@ -69,15 +71,11 @@ const suppe = document.querySelector('#suppe');
 const suppeP = document.querySelector('#suppeP');
 const suppeImg = document.querySelector('#suppeImg');
 
-//funksjon lytter til musover og blurer bilde og viser p
-suppe.onmouseover = () => {
-    suppeP.setAttribute('style','visibility: visible;');
-    suppeImg.setAttribute('style','filter: brightness(50%); transition: 0.7s;')
+suppe.onmouseover = function() {
+    textOverImage(suppeP,suppeImg);
 }
-//funksjon lytter til musut og fjerner blur på bildet og skjuler p
-suppe.onmouseout = () => {
-    suppeP.setAttribute('style','visibility: hidden;');
-    suppeImg.setAttribute('style','filter: none; transition: 0.7s;')
+suppe.onmouseout = function() {
+    backToImage(suppeP,suppeImg);
 }
 
 
@@ -86,15 +84,11 @@ const bakst = document.querySelector('#bakst');
 const basktP = document.querySelector('#bakstP');
 const bakstImg = document.querySelector('#bakstImg');
 
-//funksjon lytter til musover og blurer bilde og viser p
-bakst.onmouseover = () => {
-    basktP.setAttribute('style','visibility: visible;');
-    bakstImg.setAttribute('style','filter: brightness(50%); transition: 0.7s;')
+bakst.onmouseover = function() {
+    textOverImage(basktP,bakstImg);
 }
-//funksjon lytter til musut og fjerner blur på bildet og skjuler p
-bakst.onmouseout = () => {
-    basktP.setAttribute('style','visibility: hidden;');
-    bakstImg.setAttribute('style','filter: none; transition: 0.7s;')
+bakst.onmouseout = function() {
+    backToImage(basktP,bakstImg);
 }
 
 
@@ -103,15 +97,11 @@ const dessert = document.querySelector('#dessert');
 const dessertP = document.querySelector('#dessertP');
 const dessertImg = document.querySelector('#dessertImg');
 
-//funksjon lytter til musover og blurer bilde og viser p
-dessert.onmouseover = () => {
-    dessertP.setAttribute('style','visibility: visible;');
-    dessertImg.setAttribute('style','filter: brightness(50%); transition: 0.7s;')
+dessert.onmouseover = function() {
+    textOverImage(dessertP,dessertImg);
 }
-//funksjon lytter til musut og fjerner blur på bildet og skjuler p
-dessert.onmouseout = () => {
-    dessertP.setAttribute('style','visibility: hidden;');
-    dessertImg.setAttribute('style','filter: none; transition: 0.7s;')
+dessert.onmouseout = function() {
+    backToImage(dessertP,dessertImg);
 }
 
 

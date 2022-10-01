@@ -1,10 +1,12 @@
 body {
+    margin: 0;
+}
+
+#hjemBody {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0;
     row-gap: 100px;
-   
 }
 /* Header */
 .header {
@@ -36,13 +38,19 @@ h1 {
 
 #spiseIdag {
     position: absolute;
-    top: 300px;
-    background-color: rgb(0, 0, 0, 0);
+    top: 250px;
+    background-color: rgba(227, 169, 169, 0.179);
     font-size: 35px;
-    border-radius: 10%;
-    height: 60px;
-   
+    border-radius: 20%;
+    height: 200px;
+    width: 250px;
     cursor: pointer;
+    box-shadow: 0px 10px 20px;
+    border: solid;
+}
+
+#spiseIdag:hover {
+    background-color: rgba(0, 0, 119, 0.3);
 }
 
 /* conteineren til innholdet som flexes */
@@ -136,25 +144,43 @@ h1 {
     visibility: hidden;
 }
 
-/* styling for kjøttrettsiden */
+/* styling for rettsidene */
 
+.oppskriftBody {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 50px;
+}
+
+.oppskriftHeader {
+    width: 100%;
+    border: solid;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(112, 45, 45, 0.204); 
+    border: solid;
+}
 h2 {
     margin: 0;
+    background-color: rgb(0, 0, 0,0);
 }
+
 .dropDownClick {
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.7);
     border-bottom: solid;
     border-right: solid;
     height: 40px;
     display: flex;
     width: 700px;
     justify-content: center;
+    align-items: center;
     position: relative;
 }
 
 .dropDownClick img {
     height: 20px;
-    bottom: 10px;
+    bottom: 7px;
     position: absolute;
     left: 600px;
 }
@@ -164,16 +190,23 @@ h2 {
 }
 
 .oppskrift {
-    width: 700px;
+    width: 640px;
     /* visibility: hidden; */
+    padding-left: 30px;
+    padding-right: 30px;
     transition: all .5s ease;
     height: 0;
     overflow: hidden;
-    padding-left: 30px;
-    
+    background-color: rgba(254, 252, 252, 0.7);
 }
 
 
 ul {
     margin: 0;
+}
+
+.backgroundImage {
+    position: absolute; 
+    z-index: -1; 
+    width: 100%;
 }
