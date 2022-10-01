@@ -1,3 +1,15 @@
+//Button scroll
+
+const btn = document.querySelector('#spiseIdag');
+
+btn.onclick = () => {
+    window.scrollTo({
+        top: 700,
+        left: 0,
+        behavior: 'smooth',
+    });
+}
+
 //Henter inn kjøtt-div, -bilde og -p
 const kjott = document.querySelector('#kjott');
 const kjottP = document.querySelector('#kjottP');
@@ -101,6 +113,9 @@ dessert.onmouseout = () => {
     dessertP.setAttribute('style','visibility: hidden;');
     dessertImg.setAttribute('style','filter: none; transition: 0.7s;')
 }
+
+
+
 
 
 
