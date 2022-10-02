@@ -6,6 +6,10 @@ const rundstykker = document.querySelector('#rundstykker');
 const rundstykkerOppskrift = document.querySelector('#rundstykkerOppskrift');
 const rundstykkerImg = document.querySelector('#rundstykkerImg');
 
+const eplekake = document.querySelector('#eplekake');
+const eplekakeOppskrift = document.querySelector('#eplekakeOppskrift');
+const eplekakeImg = document.querySelector('#eplekakeImg');
+
 function dropDown(oppskrift, pil) {
     if (getComputedStyle(oppskrift).height == '0px') {
         oppskrift.setAttribute('style','visibility: visible; height: 300px; overflow: scroll;');
@@ -21,4 +25,7 @@ brod.onclick = function() {
 };
 rundstykker.onclick = function() {
     dropDown(rundstykkerOppskrift,rundstykkerImg);
+};
+eplekake.onclick = function() {
+    dropDown(eplekakeOppskrift,eplekakeImg);
 };
