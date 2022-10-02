@@ -2,6 +2,9 @@ const brod = document.querySelector('#brod');
 const brodOppskrift = document.querySelector('#brodOppskrift');
 const brodImg = document.querySelector('#brodImg');
 
+const rundstykker = document.querySelector('#rundstykker');
+const rundstykkerOppskrift = document.querySelector('#rundstykkerOppskrift');
+const rundstykkerImg = document.querySelector('#rundstykkerImg');
 
 function dropDown(oppskrift, pil) {
     if (getComputedStyle(oppskrift).height == '0px') {
@@ -15,4 +18,7 @@ function dropDown(oppskrift, pil) {
 
 brod.onclick = function() {
     dropDown(brodOppskrift,brodImg);
+};
+rundstykker.onclick = function() {
+    dropDown(rundstykkerOppskrift,rundstykkerImg);
 };
